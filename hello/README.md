@@ -47,6 +47,16 @@ EOS
 ```
 This write "hoge fuga" to top line in `concat.txt`  
 `<<-` ignore hard tab.  
+### Ruby here document
+```
+print <<EOS
+the string
+next line
+EOS
+```
+Ruby do not accept space between `<<`and`EOS`.  
+
 ### refered
 https://qiita.com/take4s5i/items/e207cee4fb04385a9952
+
 
