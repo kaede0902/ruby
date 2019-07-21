@@ -55,8 +55,45 @@ next line
 EOS
 ```
 Ruby do not accept space between `<<`and`EOS`.  
+use `<<-` to del tab of `EOS`
 
 ### refered
 https://qiita.com/take4s5i/items/e207cee4fb04385a9952
+https://blog.toshimaru.net/ruby-heredoc/
 
+## Function
+```
+def funcName
+    print 'hoge'
+end
+```
+## array
+```
+puts %w[foo bar baz]
+```
+```
+name = "Billie"
+puts %W [#{name} singer USA]
+```
+`%w[string1 string2]` can output string array.  
+using `%W` and `#{var}` can expand variables.  
 
+```
+# add
+puts [1,2]+[3,4]
+# minus
+puts [1,2,3]-[2,3]
+# or
+puts [2,4,6,][1,3,5,7]
+# and
+puts [1,2,3]&[2,4,6]
+```
+There are some array literal in ruby.
+## hash(object)
+```
+user = {
+    name: 'Maki'
+}
+puts user[:name]
+```
+need [:valueName]
